@@ -7,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<Context>
-    (options => options.UseSqlServer("Data Source=DESKTOP-4FU304T\\SQLEXPRESS; Initial Catalog=SuperMarket; Integrated Security=True;"))
+    (options => options.UseSqlServer("Data Source=DESKTOP-4FU304T\\SQLEXPRESS; Initial Catalog=SuperMarket; Integrated Security=True;"));
 
 var app = builder.Build();
 
